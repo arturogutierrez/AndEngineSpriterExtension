@@ -17,12 +17,22 @@ mMainScene.attachChild(sprite)
 SpriterEntity extends from Entity so you can change its position, rotation, etc.
 
 
-### Known limitations
+## Known limitations
 
 * This version only support AndEngine GLES2 branch. I don't need GLES2-AnchorCenter support right now so I think the extension will not work on it. If you need GLES2-AnchorCenter support you are free to port this extension.
 * It doesn't support textures in TexturePacker format yet.
 
 
-### Developer:
+## Example
+
+You can download and play with my [`AndEngineSpriterExtensionExample`](https://github.com/arturogutierrez/AndEngineSpriterExtensionExample) project or, simply, you can download the [APK file](https://github.com/downloads/arturogutierrez/AndEngineSpriterExtensionExample/AndEngineSpriterExtensionExample.apk) resultant for testing in your device.
+
+## Version History
+
+Version 1.0 - Oct 14, 2012
+
+* Initial release
+
+## Developer:
 
 * Arturo Gutiérrez <arturo.gutierrez@gmail.com>
