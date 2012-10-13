@@ -11,3 +11,5 @@ gdbserver
 local.properties
 .settings
 AndEngine.iml
+/bin
+/gen
