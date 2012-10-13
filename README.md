@@ -25,7 +25,7 @@ SpriterEntity extends from Entity so you can change its position, rotation, etc.
 
 ## Example
 
-You can download and play with my [`AndEngineSpriterExtensionExample`](https://github.com/arturogutierrez/AndEngineSpriterExtensionExample) project or, simply, you can download the [APK file](https://github.com/downloads/arturogutierrez/AndEngineSpriterExtensionExample/AndEngineSpriterExtensionExample.apk) resultant for testing in your device.
+You can download and play with my [`AndEngineSpriterExtensionExample`](https://github.com/arturogutierrez/AndEngineSpriterExtensionExample) project or, simply, you can download the [APK file](https://github.com/arturogutierrez/AndEngineSpriterExtensionExample/downloads) resultant for testing in your device.
 
 ## Version History
 
