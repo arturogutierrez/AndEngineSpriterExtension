@@ -122,6 +122,7 @@ public class SpriterEntity extends Entity {
             }
         }
     }
+    
 
     @Override
     protected void onManagedUpdate(float pSecondsElapsed) {
@@ -218,6 +219,11 @@ public class SpriterEntity extends Entity {
             // Spriter Alpha1)
             SpriterObject object = currentTimelineKey.getObject(0);
             SpriterObject nextObject = nextTimelineKey.getObject(0);
+            
+            // Calculate scaling
+            float scaleX = interpolate(object.getScaleX(), nextObject.getScaleX(), interpolationFactor);
+            float scaleY = interpolate(object.getScaleY(), nextObject.getScaleY(), interpolationFactor);
+            sprite.setScale(scaleX, scaleY);
 
             // Calculate Anchor point
             float anchorPointX = sprite.getWidth() * interpolate(object.getPivotX(), nextObject.getPivotX(), interpolationFactor);
@@ -242,6 +248,9 @@ public class SpriterEntity extends Entity {
             // Set new rotation
             sprite.setRotationCenter(anchorPointX, anchorPointY);
             sprite.setRotation(rotation);
+            
+            // Calculate alpha
+            sprite.setAlpha(interpolate(object.getAlpha(), nextObject.getAlpha(), interpolationFactor));
         }
 
     }
