@@ -166,6 +166,9 @@ public class SpriterLoader extends DefaultHandler {
             float pivotX = 0.0f;
             float pivotY = 1.0f;
             float angle = 0.0f;
+            float scaleX = 1.0f;
+            float scaleY = 1.0f;
+            float alpha = 1.0f;
 
             if (attributes.getValue("x") != null) {
                 x = Float.parseFloat(attributes.getValue("x"));
@@ -179,12 +182,21 @@ public class SpriterLoader extends DefaultHandler {
             if (attributes.getValue("pivot_y") != null) {
                 pivotY = Float.parseFloat(attributes.getValue("pivot_y"));
             }
+            if (attributes.getValue("scale_x") != null) {
+            	scaleX = Float.parseFloat(attributes.getValue("scale_x"));
+            }
+            if (attributes.getValue("scale_y") != null) {
+            	scaleY = Float.parseFloat(attributes.getValue("scale_y"));
+            }
             if (attributes.getValue("angle") != null) {
                 angle = Float.parseFloat(attributes.getValue("angle"));
             }
+            if (attributes.getValue("a") != null) {
+                alpha = Float.parseFloat(attributes.getValue("a"));
+            }
 
             // Create new spritet object and add it to current timeline key
-            mCurrentTimelineKey.addObject(new SpriterObject(folder, file, x, y, pivotX, pivotY, angle));
+            mCurrentTimelineKey.addObject(new SpriterObject(folder, file, x, y, pivotX, pivotY, scaleX, scaleY, angle, alpha));
         }
     }
 

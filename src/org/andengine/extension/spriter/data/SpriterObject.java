@@ -33,16 +33,22 @@ public class SpriterObject {
     private float mY;
     private float mPivotX;
     private float mPivotY;
+    private float mScaleX;
+    private float mScaleY;
     private float mAngle;
+    private float mAlpha;
     
-    public SpriterObject(int pFolder, int pFile, float pX, float pY, float pPivotX, float pPivotY, float pAngle) {
+    public SpriterObject(int pFolder, int pFile, float pX, float pY, float pPivotX, float pPivotY, float pScaleX, float pScaleY, float pAngle, float pAlpha) {
         this.mFolder = pFolder;
         this.mFile = pFile;
         this.mX = pX;
         this.mY = pY;
         this.mPivotX = pPivotX;
         this.mPivotY = pPivotY;
+        this.mScaleX = pScaleX;
+        this.mScaleY = pScaleY;
         this.mAngle = pAngle;
+        this.mAlpha = pAlpha;
     }
 
     public int getFolder() {
@@ -72,4 +78,16 @@ public class SpriterObject {
     public float getAngle() {
         return mAngle;
     }
+    
+    public float getScaleX() {
+		return mScaleX;
+	}
+    
+    public float getScaleY() {
+		return mScaleY;
+	}
+    
+    public float getAlpha() {
+		return mAlpha;
+	}
 }
